@@ -1,40 +1,40 @@
 package org.globalpay.tutorial.networking;
 
 public class ResponseDto {
-    private Integer userId;
-    private Integer id;
-    private String title;
-    private String body;
+    private Object userId;
+    private Object id;
+    private Object title;
+    private Object body;
 
-    public Integer getUserId() {
+    public Object getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(Object userId) {
         this.userId = userId;
     }
 
-    public Integer getId() {
+    public Object getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Object id) {
         this.id = id;
     }
 
-    public String getTitle() {
+    public Object getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(Object title) {
         this.title = title;
     }
 
-    public String getBody() {
+    public Object getBody() {
         return body;
     }
 
-    public void setBody(String body) {
+    public void setBody(Object body) {
         this.body = body;
     }
 }

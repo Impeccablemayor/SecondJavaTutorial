@@ -9,7 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class GetRequest {
-    private static ObjectMapper mapper = new ObjectMapper();
+    private static final ObjectMapper mapper = new ObjectMapper();
 
     public static void main(String[] args) {
         try {
@@ -36,7 +36,6 @@ public class GetRequest {
                 ResponseDto dto = mapper.readValue(content.toString(), ResponseDto.class);
                 dto.setBody("This is the response body");
                 System.out.println(dto.getBody());
-
             } else {
                 System.out.println("Request failed with code: " + responseCode);
             }
